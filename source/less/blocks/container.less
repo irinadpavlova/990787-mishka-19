@@ -1,12 +1,15 @@
 .container {
   position: relative;
   width: 320px;
+  padding-right: 30px;
+  padding-left: 30px;
   margin: 0 auto;
   background-color: transparent;
 }
 
 .container--banner {
   width: auto;
+  padding: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -21,10 +24,24 @@
     flex-wrap: wrap;
     flex-direction: column;
   }
+
+  .container--product {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .container {
     width: @desktop-width;
+  }
+
+  .container--product {
+    padding: 0;
+    margin: 0;
+    width: 1050px;
+    justify-content: flex-start;
   }
 }
