@@ -8,6 +8,16 @@
     background-image: url("../img/hero-mobile@2x.jpg");
     background-size: auto 355px;
   }
+
+  .main-banner--catalog {
+    min-height: 178px;
+    background: #f1f1f1;
+  }
+}
+
+.main-banner--catalog {
+  min-height: 178px;
+  background: #f1f1f1;
 }
 
 .main-banner__main-list {
@@ -24,7 +34,7 @@
 
 .main-banner__title {
   width: 250px;
-  padding-top: 76px;
+  padding-top: 65px;
   padding-bottom: 120px;
   margin: 0 auto;
   font-size: 27px;
@@ -32,6 +42,11 @@
   line-height: 30px;
   text-align: center;
   color: #010000;
+}
+
+.main-banner__title--catalog {
+  padding-bottom: 20px;
+  color: @black;
 }
 
 .main-banner__link {
@@ -120,6 +135,9 @@
 
 @media (min-width: @tablet-width) {
   .main-banner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     position: relative;
     min-height: 744px;
     background: #f9f9f9 url("../img/hero-tablet@1x.jpg") no-repeat top center;
@@ -141,6 +159,16 @@
       background-image: url("../img/hero-tablet@2x.jpg");
       background-size: auto 747px;
     }
+
+    .main-banner--catalog {
+      min-height: 226px;
+      background: #f1f1f1;
+    }
+  }
+
+  .main-banner--catalog {
+    min-height: 226px;
+    background: #f1f1f1;
   }
 
   .main-banner__title {
@@ -154,7 +182,15 @@
     color: #000000;
   }
 
+  .main-banner__title--catalog {
+    padding-top: 30px;
+  }
+
   .main-banner__top-wrapper {
+    width: @tablet-width;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: 0 auto;
     order: 1;
     display: flex;
     flex-wrap: wrap;
@@ -163,6 +199,10 @@
   }
 
   .main-banner__bottom-wrapper {
+    width: @tablet-width;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: 0 auto;
     position: relative;
     order: 3;
     display: flex;
@@ -248,6 +288,24 @@
       background-image: url("../img/hero-desktop@2x.jpg");
       background-size: auto 747px;
     }
+
+    .main-banner--catalog {
+      min-height: 255px;
+      background: #f1f1f1;
+    }
+  }
+
+  .main-banner--catalog {
+    min-height: 255px;
+    background: #f1f1f1;
+  }
+
+  .main-banner__top-wrapper {
+    width: @desktop-width;
+  }
+
+  .main-banner__bottom-wrapper {
+    width: @desktop-width;
   }
 
   .main-banner__main-list {

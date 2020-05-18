@@ -90,7 +90,7 @@
       <div class="page-header__wrapper">
         <div class="container container--header">
           <div class="page-header__logo-wrapper">
-            <a class="page-header__logo">
+            <a class="page-header__logo" href="index.html">
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -102,10 +102,10 @@
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__main-list">
               <li class="main-nav__item">
-                <a class="main-nav__item-link main-nav__item-link--catalog" href="catalog.html">Каталог товаров</a>
+                <a class="main-nav__item-link main-nav__item-link--catalog">Каталог товаров</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Вязание на заказ</a>
+                <a class="main-nav__item-link" href="form.html">Вязание на заказ</a>
               </li>
             </ul>
             <div class="main-nav__nav-wrapper">
@@ -126,8 +126,8 @@
           </div>
         </div>
       </div>
-      <div class="page-header__banner-main main-banner">
-        <h1 class="main-banner__title">Милые штуки ручной работы для дома</h1>
+      <div class="page-header__banner-main main-banner main-banner--catalog">
+        <h1 class="main-banner__title main-banner__title--catalog">Каталог товаров</h1>
         <div class="main-banner__top-wrapper">
           <ul class="main-banner__main-list">
             <li class="main-banner__item">
@@ -147,100 +147,112 @@
           </ul>
           <a class="main-banner__link-delivery" href="#">Бесплатная доставка по России</a>
         </div>
-        <div class="main-banner__bottom-wrapper">
-          <a class="main-banner__link main-banner__link--interior" href="#">Предметы интерьера</a>
-          <a class="main-banner__link main-banner__link--toy" href="#">Детские игрушки</a>
-        </div>
       </div>
     </header>
     <main>
-      <section class="product">
-        <div class="container container--product">
-          <h2 class="product__title">Вязаные корзинки</h2>
-          <span class="product__new">Товар недели</span>
-          <p class="product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-          <table class="product__table">
-            <tr>
-              <td>Цвет:</td>
-              <td>«Тиффани»/серый</td>
-            </tr>
-            <tr>
-              <td>Диаметр:</td>
-              <td>25 см</td>
-            </tr>
-            <tr>
-              <td>Высота:</td>
-              <td>15 см</td>
-            </tr>
-          </table>
-          <picture>
-            <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp, img/triple-set-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp, img/triple-set-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/triple-set-mobile@1x.webp, img/triple-set-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg 2x">
-            <img class="product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Три корзинки разного размера одна в другой">
-          </picture>
-          <p class="product__price">Цена: 990 руб.</p>
-          <a class="product__link button">Заказать</a>
-        </div>
-      </section>
-      <section class="features">
-        <h2 class="features__title">Коротко о нас:</h2>
-        <ul class="features__list">
-          <li class="features__list-item features__list-item--flower">Экологически чистые материалы</li>
-          <li class="features__list-item features__list-item--money">Скандинавский стиль по российской цене</li>
-          <li class="features__list-item features__list-item--heart">Увеличивает лайки на фотографиях</li>
-          <li class="features__list-item features__list-item--ball">Связано вручную с любовью и умилением</li>
-          <li class="features__list-item features__list-item--rocket">Поддержка отечественного производителя</li>
-          <li class="features__list-item features__list-item--gift">Поставляется в подарочной упаковке</li>
+      <section class="catalog">
+        <ul class="catalog__list">
+          <li class="catalog__list-item">
+            <a class="catalog__image-link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp, img/photo-hare-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp, img/photo-hare-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp, img/photo-hare-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg, img/photo-hare-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg, img/photo-hare-tablet@2x.jpg 2x">
+                <img class="catalog__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195" alt="Вязаный зайка в голубом свитере в белую полоску">
+              </picture>
+            </a>
+            <div class="catalog__item-info">
+              <div class="catalog__title-wrapper">
+                <a class="catalog__title-link" href="#">
+                  <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
+                </a>
+                <p class="catalog__text">Рост 30 см, вес 200 г</p>
+              </div>
+              <div class="catalog__price-wrapper">
+                <p class="catalog__price">1200 руб.</p>
+                <a class="catalog__cart-link" href="#">
+                  <svg class="catalog__cart" width="21" height="18"><use xlink:href="#icon-cart"></use></svg>
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__list-item">
+            <a class="catalog__image-link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp, img/photo-bowl-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp, img/photo-bowl-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp, img/photo-bowl-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg, img/photo-bowl-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg, img/photo-bowl-tablet@2x.jpg 2x">
+                <img class="catalog__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195" alt="Оранжевая корзинка с белой полосой сверху с тремя полотенцами, свернутыми в рулончики">
+              </picture>
+            </a>
+            <div class="catalog__item-info">
+              <div class="catalog__title-wrapper">
+                <a class="catalog__title-link" href="#">
+                  <h2 class="catalog__title">Корзинка для белья</h2>
+                </a>
+                <p class="catalog__text">Диаметр 15 см, высота 10 см</p>
+              </div>
+              <div class="catalog__price-wrapper">
+                <p class="catalog__price">690 руб.</p>
+                <a class="catalog__cart-link" href="#">
+                  <svg class="catalog__cart" width="21" height="18"><use xlink:href="#icon-cart"></use></svg>
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="catalog__list-item">
+            <a class="catalog__image-link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp, img/photo-toys-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp, img/photo-toys-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp, img/photo-toys-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg, img/photo-toys-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg, img/photo-toys-tablet@2x.jpg 2x">
+                <img class="catalog__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195" alt="Салатовая корзинка с белой полосой сверху с мягкими игрушками">
+              </picture>
+            </a>
+            <div class="catalog__item-info">
+              <div class="catalog__title-wrapper">
+                <a class="catalog__title-link" href="#">
+                  <h2 class="catalog__title">Большая корзинка для игрушек</h2>
+                </a>
+                <p class="catalog__text">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <div class="catalog__price-wrapper">
+                <p class="catalog__price">1 500 руб.</p>
+                <a class="catalog__cart-link" href="#">
+                  <svg class="catalog__cart" width="21" height="18"><use xlink:href="#icon-cart"></use></svg>
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </a>
+              </div>
+            </div>
+          </li>
         </ul>
       </section>
-      <section class="reviews">
-        <div class="reviews__wrapper">
-          <h2 class="reviews__title">Отзывы</h2>
-          <ul class="reviews__slider-list">
-            <li class="reviews__slider-item">
-              <h3 class="reviews__author">
-                Анастасия Красильникова
-                <a class="reviews__id" href="#">@misssssiskras</a>
-              </h3>
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            </li>
-          </ul>
-          <div class="reviews__slider-buttons">
-            <button class="reviews__slider-button reviews__slider-button--left" type="button"><span class="visually-hidden">Предыдущий</span></button>
-            <button class="reviews__slider-button reviews__slider-button--right" type="button"><span class="visually-hidden">Следующий</span></button>
-          </div>
-          <a class="reviews__button button" href="#">Написать</a>
-        </div>
-      </section>
-      <section class="contacts">
-        <div class="contacts__wrapper">
-          <h2 class="contacts__title">Контакты</h2>
-          <p class="contacts__email">
-            e-mail:
-            <a class="contacts__link">info@mimimishkashop.ru</a>
-          </p>
-          <p class="contacts__address-text">адрес:</p>
-          <address class="contacts__address">
-            г. Санкт-Петербург,<br>
-            ул. Большая Конюшенная,<br>
-            д. 19/8, офис 101
-          </address>
-        </div>
-        <div class="contacts__map-wrapper">
-          <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871572346!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1589643145500!5m2!1sru!2sru" height="457" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          <picture class="contacts__picture">
-            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp, img/map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp, img/map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/map-mobile@1x.webp, img/map-mobile@2x.webp 2x">
-            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg 2x">
-            <img class="contacts__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Магазин Мишка по адресу г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101" width="322" height="457">
+      <section class="video">
+        <h2 class="video__title">Процесс производства</h2>
+        <div class="video__wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp, img/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp, img/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-mobile@1x.webp, img/video-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
+            <img class="video__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Салатовая корзинка с серой полосой внизу">
           </picture>
+          <button class="video__button-play" type="button">
+            <span class="visually-hidden">Воспроизведение</span>
+            <svg class="video__button-svg" width="101" height="77"><use xlink:href="#icon-play"></use></svg>
+          </button>
         </div>
-        <a class="contacts__button button" href="#">Напишите нам</a>
+        <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="video__button button" href="#">Сделать заказ</a>
       </section>
     </main>
     <footer class="footer">
@@ -276,30 +288,6 @@
         </a>
       </div>
     </footer>
-    <!-- <div class="modal">
-      <div class="modal__window">
-        <h1 class="modal__title">Добавить в корзину</h1>
-        <p class="modal__text">Выберите размер:</p>
-        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-          <ul class="modal__list">
-            <li class="modal__list-item">
-              <input class="modal__input visually-hidden" type="radio" name="size" value="s" checked id="size-s">
-              <label class="modal__label" for="size-s">s</label>
-            </li>
-            <li class="modal__list-item">
-              <input class="modal__input visually-hidden" type="radio" name="size" value="m" id="size-m">
-              <label class="modal__label" for="size-m">m</label>
-            </li>
-            <li class="modal__list-item">
-              <input class="modal__input visually-hidden" type="radio" name="size" value="l" id="size-l">
-              <label class="modal__label" for="size-l">l</label>
-            </li>
-          </ul>
-          <button class="modal__button" type="submit">Добавить</button>
-        </form>
-      </div>
-    </div>
-    <div class="overlay"></div> -->
   <script src="js/main.min.js"></script>
   </body>
 </html>
