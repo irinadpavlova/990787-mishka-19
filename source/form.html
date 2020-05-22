@@ -128,10 +128,10 @@
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__main-list">
               <li class="main-nav__item">
-                <a class="main-nav__item-link main-nav__item-link--catalog">Каталог товаров</a>
+                <a class="main-nav__item-link main-nav__item-link--catalog" href="catalog.html">Каталог товаров</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__item-link" href="form.html">Вязание на заказ</a>
+                <a class="main-nav__item-link">Вязание на заказ</a>
               </li>
             </ul>
             <div class="main-nav__nav-wrapper">
@@ -180,7 +180,7 @@
     <main>
       <section class="form">
         <h2 class="form__title visually-hidden">Форма заказа изделия ручной работы</h2>
-        <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="form__text container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="form__content" action="https://echo.htmlacademy.ru" method="post">
           <div class="form__fieldset form__fieldset--radio container">
             <h2 class="form__legend form__legend--radio">Тип</h2>
@@ -247,7 +247,7 @@
               </div>
             </div>
             <div class="form__fieldset form__fieldset--contacts form__fieldset--mail container">
-              <h2 class="form__legend form__legend--contacts">E-mail</h2>
+              <h2 class="form__legend form__legend--contacts form__legend--mail">E-mail</h2>
               <label class="form__label visually-hidden" for="field-phone">Введите E-mail</label>
               <div class="form__input-wrapper form__input-wrapper--mail">
                 <input class="form__input form__input--email" type="email" name="email" placeholder="Ваш Email*" id="field-email" required="">
@@ -260,8 +260,8 @@
             <textarea class="form__input form__input--textarea" placeholder="Опишите все ваши пожелания к заказу" name="textarea"></textarea>
           </div>
           <div class="form__button-wrapper container">
-            <button class="form__button button" type="submit">Отправить заказ</button>
             <small class="form__small">*Поля обязательны для заполнения</small>
+            <button class="form__button button" type="submit">Отправить заказ</button>
           </div>
         </form>
       </section>
