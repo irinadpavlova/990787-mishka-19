@@ -1,5 +1,5 @@
 .contacts {
-  min-height: 893px;
+  min-height: 856px;
   font-size: 15px;
   line-height: 30px;
   text-align: left;
@@ -15,8 +15,8 @@
 
 .contacts__title {
   margin: 0;
-  padding-top: 40px;
-  padding-bottom: 38px;
+  padding-top: 35px;
+  padding-bottom: 26px;
   font-size: 18px;
   line-height: 30px;
   text-align: left;
@@ -73,7 +73,7 @@
 .contacts__address {
   display: inline-block;
   vertical-align: top;
-  padding-bottom: 40px;
+  padding-bottom: 37px;
   padding-left: 32px;
   width: 180px;
   font-size: 15px;
@@ -110,11 +110,12 @@
 .contacts__button {
   width: 260px;
   margin: 0 auto;
+  padding-top: 13px;
 }
 
 @media (min-width: @tablet-width) {
   .contacts {
-    min-height: 926px;
+    min-height: 843px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -123,15 +124,19 @@
     width: @tablet-width;
     padding-right: 50px;
     padding-left: 50px;
-    background: url("../img/flag.svg") no-repeat 90% 19%;
+    background: url("../img/flag.svg") no-repeat 93% 10%;
     background-size: 47px 81px;
   }
 
   .contacts__title {
-    padding-top: 70px;
-    padding-bottom: 60px;
+    padding-top: 34px;
+    padding-bottom: 48px;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .contacts__link {
+    margin-left: 19px;
   }
 
   .contacts__email {
@@ -140,35 +145,64 @@
     width: 334px;
   }
 
+  .contacts__address-text {
+    font-size: 17px;
+  }
+
   .contacts__address {
     width: 258px;
+    padding-left: 24px;
+    padding-bottom: 57px;
+    font-size: 17px;
+  }
+
+  .contacts__map-wrapper {
+    position: relative;
+    height: 457px;
+    margin-bottom: 55px;
+  }
+
+  .contacts__button {
+    width: 230px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts {
     position: relative;
-    min-height: 633px;
+    min-height: 549px;
   }
 
   .contacts__wrapper {
     width: @desktop-width;
     padding-right: 550px;
-    padding-left: 225px;
-    background: url("../img/flag.svg") no-repeat 10% 36%;
+    padding-left: 220px;
+    background: url("../img/flag.svg") no-repeat 10% 29%;
     background-size: 47px 81px;
   }
 
   .contacts__title {
-    padding-top: 145px;
+    padding-top: 114px;
     font-size: 53px;
     line-height: 57px;
   }
 
+  .contacts__email {
+    padding-left: 4px;
+  }
+
+  .contacts__address-text {
+    padding-left: 4px;
+  }
+
+  .contacts__address {
+    padding-bottom: 81px;
+  }
+
   .contacts__map-wrapper {
     position: absolute;
-    right: 50px;
-    top: 70px;
+    right: 91px;
+    top: 44px;
     z-index: 3;
     width: 525px;
     height: 457px;
@@ -188,6 +222,6 @@
 
   .contacts__button {
     width: 230px;
-    margin-left: 225px;
+    margin-left: 265px;
   }
 }

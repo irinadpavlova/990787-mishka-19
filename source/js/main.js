@@ -14,9 +14,8 @@ navToggle.addEventListener('click', function() {
 });
 
 var button = document.querySelector(".product__link");
-var popup = document.querySelector(".modal");
+var popup = document.querySelector(".modal__window");
 var overlay = document.querySelector(".overlay");
-var window = document.querySelector(".modal__window");
 
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -24,7 +23,7 @@ button.addEventListener("click", function (evt) {
   overlay.classList.add("modal-show");
 });
 
-!modal__window.addEventListener("click", function (evt) {
+overlay.addEventListener("click", function (evt) {
   popup.classList.remove("modal-show");
   overlay.classList.remove("modal-show");
 });

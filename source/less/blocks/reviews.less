@@ -1,5 +1,5 @@
 .reviews {
-  min-height: 675px;
+  min-height: 664px;
   position: relative;
   background-color: @white;
 
@@ -34,8 +34,8 @@
 
 .reviews__title {
   margin: 0;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 35px;
+  padding-bottom: 24px;
   font-size: 25px;
   line-height: 30px;
   text-align: left;
@@ -44,7 +44,7 @@
 
 .reviews__text {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
   font-size: 15px;
   line-height: 30px;
   text-align: left;
@@ -63,7 +63,8 @@
 
 .reviews__id {
   display: block;
-  padding-bottom: 34px;
+  padding-top: 2px;
+  padding-bottom: 20px;
   font-size: 17px;
   line-height: 30px;
   font-weight: normal;
@@ -132,9 +133,9 @@
 
 @media (min-width: @tablet-width) {
   .reviews {
-    min-height: 457px;
+    min-height: 483px;
     position: relative;
-    margin-top: 30px;
+    margin-top: 22px;
     margin-bottom: 86px;
     background: @white url("../img/review@1x.jpg") no-repeat top left;
 
@@ -146,14 +147,14 @@
       left: 0;
       width: 100%;
       height: 15px;
-      background: url("../img/bg-zigzag-line.svg") repeat top center;
+      background: url("../img/bg-zigzag-line.svg") repeat 100% 80%;
     }
   }
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     .reviews {
       background: @white url("../img/review@2x.jpg") no-repeat top left;
-      background-size: 45% auto;
+      background-size: 45.5% auto;
     }
   }
 
@@ -168,6 +169,8 @@
   }
 
   .reviews__title {
+    padding-top: 76px;
+    padding-bottom: 50px;
     order: 1;
     font-size: 43px;
     line-height: 50px;
@@ -178,7 +181,7 @@
   }
 
   .reviews__text {
-    padding-bottom: 60px;
+    padding-bottom: 47px;
     width: 645px;
     font-size: 17px;
   }
@@ -191,13 +194,13 @@
   }
 
   .reviews__id {
-    padding-bottom: 50px;
+    padding-bottom: 37px;
   }
 
   .reviews__slider-buttons {
     position: absolute;
-    bottom: 50px;
-    right: 0;
+    bottom: 47px;
+    right: 57px;
 
     order: 4;
     width: 175px;
@@ -213,8 +216,8 @@
   .reviews__button {
     order: 2;
     width: 175px;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 79px;
+    margin-bottom: 44px;
   }
 }
 
@@ -251,8 +254,8 @@
   }
 
   .reviews__text {
-    padding-bottom: 40px;
-    width: 770px;
+    padding-bottom: 27px;
+    width: 798px;
   }
 
   .reviews__author {
@@ -266,6 +269,11 @@
     padding-bottom: 50px;
   }
 
+  .reviews__slider-buttons {
+    bottom: 61px;
+    right: 8px;
+  }
+
   .reviews__slider-button {
     width: 87.5px;
     min-height: 52px;
@@ -274,7 +282,7 @@
 
   .reviews__button {
     width: 175px;
-    margin-top: 80px;
-    margin-bottom: 50px;
+    margin-top: 78px;
+    margin-bottom: 45px;
   }
 }
