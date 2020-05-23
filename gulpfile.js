@@ -32,8 +32,7 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/js/picturefill.min.js",
-    "source/pp/**/*.{png,js,css}"
+    "source/js/picturefill.min.js"
   ], {
     base: "source"
   })
