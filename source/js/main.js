@@ -14,7 +14,7 @@ navToggle.addEventListener('click', function() {
 });
 
 var button = document.querySelector(".product__link");
-var popup = document.querySelector(".modal__window");
+var popup = document.querySelector(".modal");
 var overlay = document.querySelector(".overlay");
 
 button.addEventListener("click", function (evt) {

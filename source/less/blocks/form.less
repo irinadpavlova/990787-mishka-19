@@ -122,22 +122,18 @@
   color: rgba(68, 68, 68, 0.3);
 }
 
-.form__input:focus::-webkit-input-placeholder,
 .form__input:active::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: @greyish-brown;
 }
 
-.form__input:focus::-moz-placeholder,
 .form__input:active::-moz-placeholder { /* Firefox 19+ */
   color: @greyish-brown;
 }
 
-.form__input:focus:-ms-input-placeholder,
 .form__input:active:-ms-input-placeholder { /* IE 10+ */
   color: @greyish-brown;
 }
 
-.form__input:focus:-moz-placeholder,
 .form__input:active:-moz-placeholder { /* Firefox 18- */
   color: @greyish-brown;
 }
@@ -157,13 +153,13 @@
   background-color: transparent;
   box-shadow: inset 0 -2px 0 0 @black;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba(68, 68, 68, 0.3);
     box-shadow: inset 0 -2px 0 0 #62d1ba;
   }
 
-  &:active,
-  &:focus {
+  &:active {
     color: @greyish-brown;
     box-shadow: inset 0 -2px 0 0 #62d1ba;
     outline: none;
@@ -295,6 +291,7 @@
   width: 260px;
   margin-top: 28px;
   margin-bottom: 55px;
+  font-family: @font;
 }
 
 .form__small {
