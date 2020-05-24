@@ -50,9 +50,11 @@
 }
 
 .main-banner__link {
+  box-sizing: content-box;
   display: block;
   position: relative;
-  min-height: 103px;
+  min-height: 43px;
+  width: 106px;
   padding-top: 25px;
   padding-right: 185px;
   padding-bottom: 30px;
@@ -71,6 +73,7 @@
   &:hover,
   &:focus {
     padding-bottom: 35px;
+    margin-top: -5px;
     background-color: @sea-hover;
 
     &::before {
@@ -106,6 +109,7 @@
   &:hover,
   &:focus {
     padding-bottom: 35px;
+    margin-top: -5px;
     background-color: @sea-dark-hover;
 
     &::before {
@@ -141,8 +145,6 @@
 
 @media (max-width: @mobile-width-only) {
   .main-banner__link {
-    width: 320px;
-    min-height: 103px;
     margin: 0 auto;
   }
 
@@ -150,9 +152,18 @@
     background-color: @sea;
 
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       background-color: @sea-hover;
+      margin-top: -5px;
+      padding-bottom: 5px;
+
+      & .main-banner__link {
+        background-color: @sea-hover;
+
+        &::before {
+          opacity: 0.3;
+        }
+      }
     }
   }
 
@@ -160,9 +171,18 @@
     background-color: @sea-dark;
 
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       background-color: @sea-dark-hover;
+      margin-top: -5px;
+      padding-bottom: 5px;
+
+      & .main-banner__link {
+        background-color: @sea-dark-hover;
+
+        &::before {
+          opacity: 0.3;
+        }
+      }
     }
   }
 }
@@ -238,7 +258,7 @@
     padding-right: 50px;
     padding-left: 50px;
     margin: auto;
-    margin-top: 370px;
+    margin-top: 375px;
     margin-bottom: 0;
     position: relative;
     order: 3;
@@ -247,17 +267,30 @@
   }
 
   .main-banner__link {
-    width: 334px;
+    width: 111px;
     padding-top: 27px;
-    padding-left: 35px;
-    padding-bottom: 42px;
+    padding-left: 36px;
+    padding-bottom: 34px;
     font-size: 20px;
     line-height: 30px;
 
     &:hover,
     &:focus,
     &:active {
-      padding-bottom: 47px;
+      padding-bottom: 39px;
+      margin-bottom: -5px;
+    }
+  }
+
+  .main-banner__link--toy {
+    width: 94px;
+    padding-right: 204px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      padding-bottom: 39px;
+      margin-bottom: -5px;
     }
   }
 
@@ -397,9 +430,9 @@
   }
 
   .main-banner__link {
-    min-height: 137px;
-    width: 525px;
-    padding-right: 315px;
+    min-height: 50px;
+    width: 160px;
+    padding-right: 329px;
     padding-bottom: 50px;
     font-size: 20px;
     line-height: 30px;
@@ -408,6 +441,7 @@
     &:focus,
     &:active {
       padding-bottom: 55px;
+      margin-top: -5px;
     }
   }
 }
