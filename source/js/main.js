@@ -19,21 +19,21 @@ var overlay = document.querySelector(".overlay");
 
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.add("modal-show");
-  overlay.classList.add("modal-show");
+  popup.classList.add("modal--show");
+  overlay.classList.add("overlay--show");
 });
 
 overlay.addEventListener("click", function (evt) {
-  popup.classList.remove("modal-show");
-  overlay.classList.remove("modal-show");
+  popup.classList.remove("modal--show");
+  overlay.classList.remove("overlay--show");
 });
 
 window.addEventListener("keydown", function (evt) {
   evt.preventDefault();
   if (evt.keyCode === 27) {
-    if (popup.classList.contains("modal-show") && overlay.classList.contains("modal-show")) {
-      popup.classList.remove("modal-show");
-      overlay.classList.remove("modal-show");
+    if (popup.classList.contains("modal--show") && overlay.classList.contains("overlay--show")) {
+      popup.classList.remove("modal--show");
+      overlay.classList.remove("overlay--show");
     }
   }
 })
