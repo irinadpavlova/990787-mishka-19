@@ -70,26 +70,6 @@
 .main-banner__link--interior {
   background-color: @sea;
 
-  &:hover,
-  &:focus {
-    padding-bottom: 35px;
-    margin-top: -5px;
-    background-color: @sea-hover;
-
-    &::before {
-      opacity: 0.7;
-    }
-  }
-
-  &:active {
-    background-color: @sea-hover;
-    color: rgba(255, 255, 255, 0.3);
-
-    &::before {
-      opacity: 0.3;
-    }
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -105,26 +85,6 @@
 
 .main-banner__link--toy {
   background-color: @sea-dark;
-
-  &:hover,
-  &:focus {
-    padding-bottom: 35px;
-    margin-top: -5px;
-    background-color: @sea-dark-hover;
-
-    &::before {
-      opacity: 0.7;
-    }
-  }
-
-  &:active {
-    background-color: @sea-dark-hover;
-    color: rgba(255, 255, 255, 0.3);
-
-    &::before {
-      opacity: 0.3;
-    }
-  }
 
   &::before {
     content: "";
@@ -161,6 +121,16 @@
         background-color: @sea-hover;
 
         &::before {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    &:active {
+      & .main-banner__link {
+        color: rgba(255, 255, 255, 0.3);
+
+        &::before {
           opacity: 0.3;
         }
       }
@@ -178,6 +148,16 @@
 
       & .main-banner__link {
         background-color: @sea-dark-hover;
+
+        &::before {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    &:active {
+      & .main-banner__link {
+        color: rgba(255, 255, 255, 0.3);
 
         &::before {
           opacity: 0.3;
@@ -273,12 +253,27 @@
     padding-bottom: 34px;
     font-size: 20px;
     line-height: 30px;
+  }
 
+  .main-banner__link--interior {
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       padding-bottom: 39px;
-      margin-bottom: -5px;
+      margin-top: -5px;
+      background-color: @sea-hover;
+
+      &::before {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      background-color: @sea-hover;
+      color: rgba(255, 255, 255, 0.3);
+
+      &::before {
+        opacity: 0.3;
+      }
     }
   }
 
@@ -287,10 +282,23 @@
     padding-right: 204px;
 
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       padding-bottom: 39px;
-      margin-bottom: -5px;
+      margin-top: -5px;
+      background-color: @sea-dark-hover;
+
+      &::before {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      background-color: @sea-dark-hover;
+      color: rgba(255, 255, 255, 0.3);
+
+      &::before {
+        opacity: 0.3;
+      }
     }
   }
 
@@ -438,10 +446,8 @@
     line-height: 30px;
 
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       padding-bottom: 55px;
-      margin-top: -5px;
     }
   }
 }
